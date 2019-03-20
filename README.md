@@ -28,8 +28,8 @@ Follow these steps for completing your project.
 
 - [x] Build an API to let clients perform CRUD operations on `users` and `posts`.
 - [x] Add an endpoint to retrieve the list of `posts` for a `user`.
-- [] Write custom `middleware` to ensure that the user's `name` is upper-cased before the request reaches the `POST` or `PUT` _route handlers_.
-- [] Use `Express Routers` to organize the endpoints. You can optionally move and rename `postDb.js` and `userDb.js` to place it next to the corresponding router.
+- [x] Write custom `middleware` to ensure that the user's `name` is upper-cased before the request reaches the `POST` or `PUT` _route handlers_.
+- [x] Use `Express Routers` to organize the endpoints. You can optionally move and rename `postDb.js` and `userDb.js` to place it next to the corresponding router.
 
 ### Database Persistence Helpers
 

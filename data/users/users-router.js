@@ -4,6 +4,7 @@ const Users = require('../helpers/userDb')
 
 const router = express.Router();
 
+
 router.get('/', async (req, res) => {
     try {
         const users = await Users.get()
