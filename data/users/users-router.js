@@ -1,11 +1,13 @@
 const express = require('express');
 
+const cors = require('cors');
+
 const Users = require('../helpers/userDb')
 
 const router = express.Router();
 
 
-router.get('/', async (req, res) => {
+router.get('/', cors(), async (req, res) => {
     try {
         const users = await Users.get()
         res.status(200).json(users)

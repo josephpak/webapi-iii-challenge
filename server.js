@@ -5,7 +5,10 @@ const usersRouter = require('./data/users/users-router.js')
 
 const postsRouter = require('./data/posts/posts-router.js')
 
+const cors = require('cors');
+
 const server = express();
+
 
 function upperCaser (req, res, next) {
     if (req.body.hasOwnProperty('name')) {
@@ -25,6 +28,8 @@ function upperCaser (req, res, next) {
 }
 
 server.use(express.json());
+
+server.use(cors());
 
 server.use(helmet())
 
